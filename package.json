@@ -1,0 +1,19 @@
+{
+  "name": "supergrow-brain",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "start": "node src/server.ts",
+    "test": "node --test src/*.test.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/mcp": "^2.0.104",
+    "@hono/node-server": "^2.1.11",
+    "@onkeiki/ai-sdk": "^0.1.9",
+    "ai": "^7.0.181",
+    "hono": "^4.13.22"
+  }
+}
