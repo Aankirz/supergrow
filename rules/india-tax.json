@@ -1,0 +1,23 @@
+{
+  "taxYear": "FY 2026-27",
+  "checkedOn": "2026-11-25",
+  "equity": {
+    "appliesTo": "Listed shares and equity-oriented mutual funds where STT is paid",
+    "longTermAfterMonths": 12,
+    "ltcgRate": 0.125,
+    "ltcgExemptionPerYear": 125000,
+    "stcgRate": 0.2
+  },
+  "cessRate": 0.04,
+  "notHandled": [
+    "Surcharge for high incomes",
+    "Grandfathering for equity bought before 1 Feb 2018",
+    "Debt funds bought on or after 1 Apr 2023 (taxed at your slab rate)",
+    "Losses carried forward from earlier years"
+  ],
+  "sources": [
+    "https://business-standard.com/budget/news/budget-2026-ltcg-tax-rates-unchanged-for-fy27-fm-sitharaman-126020100424_1.html",
+    "https://economictimes.indiatimes.com/wealth/tax/latest-capital-gains-tax-rate-for-equity-gold-mutual-funds-for-fy2026-2027-after-budget-2026/printarticle/127796728.cms",
+    "https://moneycontrol.com/news/business/personal-finance/budget-2026-has-the-capital-gains-tax-structure-changed-check-here-13796270.html"
+  ]
+}

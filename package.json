@@ -7,7 +7,8 @@
   },
   "scripts": {
     "start": "node src/server.ts",
-    "test": "node --test src/*.test.ts"
+    "test": "node --test src/*.test.ts",
+    "typecheck": "tsc -p ."
   },
   "dependencies": {
     "@ai-sdk/mcp": "^2.0.104",
@@ -15,6 +16,12 @@
     "@hono/node-server": "^2.1.11",
     "@onkeiki/ai-sdk": "^0.1.9",
     "ai": "^7.0.181",
-    "hono": "^4.13.22"
+    "hono": "^4.13.22",
+    "supermemory": "^5.1.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.7",
+    "typescript": "^5.9.3"
   }
 }
