@@ -10,6 +10,6 @@ else
   ARGS="--user-data-dir=/data/desktop/profile --no-first-run --no-default-browser-check"
   export DISPLAY=${DISPLAY:-:0}
 fi
-nohup /usr/lib/chromium/chromium $ARGS --remote-debugging-port=9222 --remote-allow-origins=* about:blank >/tmp/chromium.log 2>&1 &
+nohup /usr/lib/chromium/chromium $ARGS --start-maximized --hide-crash-restore-bubble --remote-debugging-port=9222 --remote-allow-origins=* about:blank >/tmp/chromium.log 2>&1 &
 for i in 1 2 3 4 5 6 7 8 9 10; do curl -s -m 2 localhost:9222/json/version >/dev/null && { echo ready; exit 0; }; sleep 1; done
 echo "browser did not start"; exit 1

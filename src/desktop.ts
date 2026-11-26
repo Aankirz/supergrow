@@ -99,7 +99,7 @@ export async function signInLink(userKey: string, broker: string): Promise<{ lin
   const loginUrl = BROKERS[broker]
   if (!loginUrl) return { error: `unknown broker; supported: ${Object.keys(BROKERS).join(', ')}` }
   const id = await ready(userKey)
-  await cdp(id, 'open', loginUrl)
+  await cdp(id, 'signin', loginUrl)
   const v = await call(`/${id}/viewer`, { mode: 'control', ttlSeconds: SIGN_IN_LINK_SECONDS })
   return { link: v.url, expiresInMinutes: SIGN_IN_LINK_SECONDS / 60 }
 }
